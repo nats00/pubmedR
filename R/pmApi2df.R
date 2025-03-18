@@ -40,7 +40,7 @@ pmApi2df <- function(P, format="bibliometrix"){
                      TC=NA, SN=NA, J9=NA, JI=NA, PY=NA, PY_IS=NA, VL=NA, DI=NA, PG=NA, GRANT_ID=NA, GRANT_ORG=NA, UT=NA, PMID=NA,
                      DB="PUBMED", AU_UN=NA, stringsAsFactors = FALSE)
 
-    pb <- utils::txtProgressBar(min = 1, max = n, initial = 1, char = "=")
+    pb <- utils::txtProgressBar(min = 0, max = n, initial = 0, char = "=")
 
     for (i in 1:n) {
       #if (i%%100==0 | i==n) cat("Documents converted  ",i,"of",n, "\n")
